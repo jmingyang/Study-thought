@@ -17,6 +17,7 @@
 		B5670C6C1FC158D000E2CDFE /* Study_thoughtUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5670C6B1FC158D000E2CDFE /* Study_thoughtUITests.m */; };
 		B5670C7C1FC15F5700E2CDFE /* mainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5670C7B1FC15F5700E2CDFE /* mainTableViewCell.m */; };
 		B5670C7F1FC170F100E2CDFE /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = B5670C7E1FC170F100E2CDFE /* UIColor+Hex.m */; };
+		B5A0B6AE1FC3D21A005E7655 /* selfDefinedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0B6AD1FC3D21A005E7655 /* selfDefinedView.m */; };
 		B5C5138E1FC2C10C00084555 /* BasisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C5138D1FC2C10C00084555 /* BasisViewController.m */; };
 		BD9012233EC1AC69A421B3C7 /* libPods-Study&thought.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB09902162DD2FE1CC6325 /* libPods-Study&thought.a */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,8 @@
 		B5670C7B1FC15F5700E2CDFE /* mainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mainTableViewCell.m; sourceTree = "<group>"; };
 		B5670C7D1FC170F100E2CDFE /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		B5670C7E1FC170F100E2CDFE /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		B5A0B6AC1FC3D21A005E7655 /* selfDefinedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = selfDefinedView.h; path = "Study&thought/Basic Content/view/selfDefinedView.h"; sourceTree = SOURCE_ROOT; };
+		B5A0B6AD1FC3D21A005E7655 /* selfDefinedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = selfDefinedView.m; path = "Study&thought/Basic Content/view/selfDefinedView.m"; sourceTree = SOURCE_ROOT; };
 		B5C5138C1FC2C10C00084555 /* BasisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasisViewController.h; sourceTree = "<group>"; };
 		B5C5138D1FC2C10C00084555 /* BasisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +161,31 @@
 			path = "Study&thoughtUITests";
 			sourceTree = "<group>";
 		};
+		B5A0B6A91FC3BAB5005E7655 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5C5138C1FC2C10C00084555 /* BasisViewController.h */,
+				B5C5138D1FC2C10C00084555 /* BasisViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		B5A0B6AA1FC3BACE005E7655 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B5A0B6AB1FC3BAD7005E7655 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B5A0B6AC1FC3D21A005E7655 /* selfDefinedView.h */,
+				B5A0B6AD1FC3D21A005E7655 /* selfDefinedView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		B5C513881FC2BE3C00084555 /* Home Page */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,8 +209,9 @@
 		B5C5138B1FC2C02800084555 /* Basic Content */ = {
 			isa = PBXGroup;
 			children = (
-				B5C5138C1FC2C10C00084555 /* BasisViewController.h */,
-				B5C5138D1FC2C10C00084555 /* BasisViewController.m */,
+				B5A0B6AB1FC3BAD7005E7655 /* view */,
+				B5A0B6AA1FC3BACE005E7655 /* model */,
+				B5A0B6A91FC3BAB5005E7655 /* controller */,
 			);
 			path = "Basic Content";
 			sourceTree = "<group>";
@@ -383,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5670C4C1FC158D000E2CDFE /* ViewController.m in Sources */,
+				B5A0B6AE1FC3D21A005E7655 /* selfDefinedView.m in Sources */,
 				B5C5138E1FC2C10C00084555 /* BasisViewController.m in Sources */,
 				B5670C7F1FC170F100E2CDFE /* UIColor+Hex.m in Sources */,
 				B5670C571FC158D000E2CDFE /* main.m in Sources */,

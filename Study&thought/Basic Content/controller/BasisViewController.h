@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface BasisViewController : UIViewController
-
+#import "selfDefinedView.h"
+@interface BasisViewController : UIViewController<CAAnimationDelegate,selfDefinedViewDelegate>
+{
+    UILabel *infoLab;
+}
 @end
