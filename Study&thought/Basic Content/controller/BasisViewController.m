@@ -9,6 +9,7 @@
 #import "BasisViewController.h"
 #import "UIColor+Hex.h"
 #import "Masonry.h"
+#import "FMDBViewController.h"
 
 @interface BasisViewController ()
 //@property (nonatomic, retain) CAShapeLayer *shapelayer;
@@ -20,8 +21,8 @@
 //@synthesize shapelayer;
 //@synthesize bezierPath;
 //@synthesize pathAnimation;
-static int x = 100;
-static int y = 100;
+//static int x = 100;
+//static int y = 100;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,6 +42,7 @@ static int y = 100;
     self.navigationController.navigationBar.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.navigationController.navigationBar.bounds].CGPath;
     self.navigationItem.titleView = titleLab;
     
+    //提示
     UILabel *lab1 = [UILabel new];
     lab1.text = @"点击灰色view触发block事件";
     [self.view addSubview:lab1];
@@ -49,7 +51,6 @@ static int y = 100;
         make.centerX.mas_equalTo(self.view.mas_centerX);
         make.centerY.mas_equalTo(self.view.mas_top).with.offset(150);
     }];
-    
     UILabel *lab2 = [UILabel new];
     lab2.text = @"点击黑色按钮触发delegate事件";
     [self.view addSubview:lab2];
@@ -59,12 +60,13 @@ static int y = 100;
         make.centerY.mas_equalTo(self.view.mas_top).with.offset(200);
     }];
     
+    //自定义的view，view自定义的方法中传入block
     selfDefinedView *self_defView = [[selfDefinedView alloc] initWithFrame:CGRectMake(200, 200, 200, 200)];
     [self_defView addViewBlock:^ {
         NSLog(@"使用block实现自定义view的事件");
         infoLab.text = @"使用block实现自定义view的事件";
     }];
-    self_defView.delegate = self;
+    self_defView.delegate = self;//view的代理
     [self.view addSubview:self_defView];
     [self_defView mas_makeConstraints:^(MASConstraintMaker *make) {//使用第三方框架实现自动布局
         make.width.mas_equalTo(200);
@@ -73,6 +75,7 @@ static int y = 100;
         make.centerY.mas_equalTo(self.view.mas_centerY).with.offset(50);
     }];
     
+    //点击后的提示
     infoLab = [UILabel new];
     [self.view addSubview:infoLab];
     [infoLab mas_makeConstraints:^(MASConstraintMaker *make) {//使用第三方框架实现自动布局
@@ -82,6 +85,18 @@ static int y = 100;
         make.centerY.mas_equalTo(self_defView.mas_top).with.offset(-50);
     }];
 
+    UIButton *btn = [UIButton new];
+    btn.backgroundColor = [UIColor blackColor];
+    [btn setTitle:@"go Next" forState:UIControlStateNormal];
+    [btn setTintColor:[UIColor whiteColor]];
+    [btn addTarget:self action:@selector(gotoFMDB) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {//使用第三方框架实现自动布局
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(40);
+        make.centerX.mas_equalTo(self.view.mas_centerX);
+        make.bottom.mas_equalTo(self.view.mas_bottom).with.offset(-50);
+    }];
 //    shapelayer = [CAShapeLayer new];
 //    shapelayer.fillColor = [UIColor whiteColor].CGColor;
 //    shapelayer.strokeColor = [UIColor blackColor].CGColor;//边框颜色
@@ -121,6 +136,11 @@ static int y = 100;
     
 }
 
+- (void)gotoFMDB {
+    FMDBViewController *fmdbPage = [FMDBViewController new];
+    [self.navigationController pushViewController:fmdbPage animated:NO];
+}
+
 - (void)delegateFunc {
     NSLog(@"使用delegate实现自定义view的事件");
     infoLab.text = @"使用delegate实现自定义view的事件";
@@ -131,7 +151,6 @@ static int y = 100;
 //    y+=100;
 //    [bezierPath addLineToPoint:CGPointMake(x, y)];
 //    shapelayer.path = bezierPath.CGPath;
-//
 //    [self.shapelayer addAnimation:pathAnimation forKey:@"strokeEnd"];
 //}
 

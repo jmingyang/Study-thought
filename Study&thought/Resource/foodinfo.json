@@ -1,0 +1,365 @@
+{
+    "Food": [
+      {
+        "FoodsCodeId": "TG001",
+        "FoodsChiName": "香菇炖鸡",
+        "FoodsMode": "蛊",
+        "Price": "48",
+        "HolidayPrice": "48",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "汤羹"
+      },
+      {
+        "FoodsCodeId": "RC001",
+        "FoodsChiName": "爆鸭舌",
+        "FoodsMode": "盘",
+        "Price": "48",
+        "HolidayPrice": "48",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "高档热菜"
+      },
+      {
+        "FoodsCodeId": "LC002",
+        "FoodsChiName": "含苞待放",
+        "FoodsMode": "盘",
+        "Price": "68",
+        "HolidayPrice": "68",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "美味凉菜"
+      },
+      {
+        "FoodsCodeId": "LC003",
+        "FoodsChiName": "水果沙拉",
+        "FoodsMode": "份",
+        "Price": "66.00",
+        "HolidayPrice": "88",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "美味凉菜"
+      },
+      {
+        "FoodsCodeId": "LC004",
+        "FoodsChiName": "绝配凉菜",
+        "FoodsMode": "盘",
+        "Price": "35",
+        "HolidayPrice": "35",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "美味凉菜"
+      },
+      {
+        "FoodsCodeId": "LC005",
+        "FoodsChiName": "丛中一点红",
+        "FoodsMode": "份",
+        "Price": "56",
+        "HolidayPrice": "56",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "美味凉菜"
+      },
+      {
+        "FoodsCodeId": "ZS001",
+        "FoodsChiName": "东北白米",
+        "FoodsMode": "碗",
+        "Price": "5.00",
+        "HolidayPrice": "5.00",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "主食"
+      },
+      {
+        "FoodsCodeId": "LC006",
+        "FoodsChiName": "秘制绍皮",
+        "FoodsMode": "份",
+        "Price": "88",
+        "HolidayPrice": "88",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "美味凉菜"
+      },
+      {
+        "FoodsCodeId": "ZS002",
+        "FoodsChiName": "肥牛炒饭",
+        "FoodsMode": "盘",
+        "Price": "10",
+        "HolidayPrice": "10",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "主食"
+      },
+      {
+        "FoodsCodeId": "ZS003",
+        "FoodsChiName": "浇汁肉饼",
+        "FoodsMode": "张",
+        "Price": "8.00",
+        "HolidayPrice": "8.00",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "主食"
+      },
+      {
+        "FoodsCodeId": "LC007",
+        "FoodsChiName": "特色凉菜",
+        "FoodsMode": "份",
+        "Price": "36",
+        "HolidayPrice": "36",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "美味凉菜"
+      },
+      {
+        "FoodsCodeId": "LC008",
+        "FoodsChiName": "鲜花怒放",
+        "FoodsMode": "份",
+        "Price": "56",
+        "HolidayPrice": "56",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "美味凉菜"
+      },
+      {
+        "FoodsCodeId": "ZS004",
+        "FoodsChiName": "批萨",
+        "FoodsMode": "份",
+        "Price": "45",
+        "HolidayPrice": "45",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "主食"
+      },
+      {
+        "FoodsCodeId": "ZS005",
+        "FoodsChiName": "日本寿司",
+        "FoodsMode": "份",
+        "Price": "20",
+        "HolidayPrice": "20",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "主食"
+      },
+      {
+        "FoodsCodeId": "ZS006",
+        "FoodsChiName": "甜点组合",
+        "FoodsMode": "盘",
+        "Price": "36",
+        "HolidayPrice": "36",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "主食"
+      },
+      {
+        "FoodsCodeId": "ZS007",
+        "FoodsChiName": "虾鱼盖饭",
+        "FoodsMode": "份",
+        "Price": "40",
+        "HolidayPrice": "40",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "主食"
+      },
+      {
+        "FoodsCodeId": "ZS008",
+        "FoodsChiName": "营养炒饭",
+        "FoodsMode": "份",
+        "Price": "45",
+        "HolidayPrice": "45",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "主食"
+      },
+      {
+        "FoodsCodeId": "RC002",
+        "FoodsChiName": "火凤凰",
+        "FoodsMode": "份",
+        "Price": "88",
+        "HolidayPrice": "88",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "高档热菜"
+      },
+      {
+        "FoodsCodeId": "ZS009",
+        "FoodsChiName": "中式甜点",
+        "FoodsMode": "份",
+        "Price": "48",
+        "HolidayPrice": "48",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "主食"
+      },
+      {
+        "FoodsCodeId": "RC003",
+        "FoodsChiName": "夹烤鱼块",
+        "FoodsMode": "份",
+        "Price": "56",
+        "HolidayPrice": "56",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "高档热菜"
+      },
+      {
+        "FoodsCodeId": "RC004",
+        "FoodsChiName": "兰花鱼",
+        "FoodsMode": "份",
+        "Price": "88",
+        "HolidayPrice": "88",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "高档热菜"
+      },
+      {
+        "FoodsCodeId": "RC005",
+        "FoodsChiName": "特色烤鸡",
+        "FoodsMode": "份",
+        "Price": "99",
+        "HolidayPrice": "99",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "高档热菜"
+      },
+      {
+        "FoodsCodeId": "TD001",
+        "FoodsChiName": "奶酪",
+        "FoodsMode": "份",
+        "Price": "38",
+        "HolidayPrice": "38",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "甜点"
+      },
+      {
+        "FoodsCodeId": "TD002",
+        "FoodsChiName": "水果巧克力",
+        "FoodsMode": "份",
+        "Price": "58",
+        "HolidayPrice": "58",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "甜点"
+      },
+      {
+        "FoodsCodeId": "RC006",
+        "FoodsChiName": "童子鸡",
+        "FoodsMode": "份",
+        "Price": "99",
+        "HolidayPrice": "99",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "高档热菜"
+      },
+      {
+        "FoodsCodeId": "TD003",
+        "FoodsChiName": "甜蜜冰淇淋",
+        "FoodsMode": "杯",
+        "Price": "58",
+        "HolidayPrice": "58",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "甜点"
+      },
+      {
+        "FoodsCodeId": "RC007",
+        "FoodsChiName": "鱼翅",
+        "FoodsMode": "份",
+        "Price": "128",
+        "HolidayPrice": "128",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "高档热菜"
+      },
+      {
+        "FoodsCodeId": "TD004",
+        "FoodsChiName": "心型软糖",
+        "FoodsMode": "盒",
+        "Price": "60",
+        "HolidayPrice": "60",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "甜点"
+      },
+      {
+        "FoodsCodeId": "TG002",
+        "FoodsChiName": "养生粥",
+        "FoodsMode": "蛊",
+        "Price": "78",
+        "HolidayPrice": "78",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "汤羹"
+      },
+      {
+        "FoodsCodeId": "JS001",
+        "FoodsChiName": "c'est la vie",
+        "FoodsMode": "瓶",
+        "Price": "288",
+        "HolidayPrice": "288",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "酒水"
+      },
+      {
+        "FoodsCodeId": "JS002",
+        "FoodsChiName": "HARDYS Shiraz 2007",
+        "FoodsMode": "瓶",
+        "Price": "388",
+        "HolidayPrice": "388",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "酒水"
+      },
+      {
+        "FoodsCodeId": "JS003",
+        "FoodsChiName": "XO",
+        "FoodsMode": "份",
+        "Price": "188",
+        "HolidayPrice": "188",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "酒水"
+      },
+      {
+        "FoodsCodeId": "JS004",
+        "FoodsChiName": "鸡尾酒",
+        "FoodsMode": "杯",
+        "Price": "88",
+        "HolidayPrice": "88",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "酒水"
+      },
+      {
+        "FoodsCodeId": "JS005",
+        "FoodsChiName": "葡萄酒",
+        "FoodsMode": "杯",
+        "Price": "66",
+        "HolidayPrice": "66",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "酒水"
+      },
+      {
+        "FoodsCodeId": "JS006",
+        "FoodsChiName": "扎啤",
+        "FoodsMode": "杯",
+        "Price": "36",
+        "HolidayPrice": "36",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "酒水"
+      },
+      {
+        "FoodsCodeId": "LC001",
+        "FoodsChiName": "冰口鱼丝",
+        "FoodsMode": "盘",
+        "Price": "58",
+        "HolidayPrice": "58",
+        "DisPriceRate": "100",
+        "Remark": "热菜",
+        "AttachCategory": "美味凉菜"
+      }
+    ]
+  }
+  

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50220B71FC422C800421F6E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B50220B61FC422C800421F6E /* libsqlite3.tbd */; };
+		B50220B91FC422CE00421F6E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B50220B81FC422CE00421F6E /* libsqlite3.0.tbd */; };
+		B53D32AC1FC52097008252D9 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D32AB1FC52097008252D9 /* FMDBViewController.m */; };
+		B53D32B01FC5308D008252D9 /* foodinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = B53D32AF1FC5308D008252D9 /* foodinfo.json */; };
+		B53D32B31FC53186008252D9 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D32B21FC53186008252D9 /* Food.m */; };
 		B5670C491FC158D000E2CDFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5670C481FC158D000E2CDFE /* AppDelegate.m */; };
 		B5670C4C1FC158D000E2CDFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5670C4B1FC158D000E2CDFE /* ViewController.m */; };
 		B5670C4F1FC158D000E2CDFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5670C4D1FC158D000E2CDFE /* Main.storyboard */; };
@@ -18,8 +23,9 @@
 		B5670C7C1FC15F5700E2CDFE /* mainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5670C7B1FC15F5700E2CDFE /* mainTableViewCell.m */; };
 		B5670C7F1FC170F100E2CDFE /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = B5670C7E1FC170F100E2CDFE /* UIColor+Hex.m */; };
 		B5A0B6AE1FC3D21A005E7655 /* selfDefinedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0B6AD1FC3D21A005E7655 /* selfDefinedView.m */; };
+		B5A976E21FC70C240006CED0 /* Database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B5A976E11FC70C240006CED0 /* Database.sqlite */; };
 		B5C5138E1FC2C10C00084555 /* BasisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C5138D1FC2C10C00084555 /* BasisViewController.m */; };
-		BD9012233EC1AC69A421B3C7 /* libPods-Study&thought.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EB09902162DD2FE1CC6325 /* libPods-Study&thought.a */; };
+		D8BA0F544E4F41587E8A4AA5 /* libPods-Study&thought.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3149B5FD01184758D1FEB23 /* libPods-Study&thought.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +47,15 @@
 
 /* Begin PBXFileReference section */
 		1B1710D399A9CC197D621DC2 /* Pods-Study&thought.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study&thought.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Study&thought/Pods-Study&thought.debug.xcconfig"; sourceTree = "<group>"; };
-		21EB09902162DD2FE1CC6325 /* libPods-Study&thought.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Study&thought.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04E2A1C3530385A1D3F674E /* Pods-Study&thought.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Study&thought.release.xcconfig"; path = "Pods/Target Support Files/Pods-Study&thought/Pods-Study&thought.release.xcconfig"; sourceTree = "<group>"; };
+		B3149B5FD01184758D1FEB23 /* libPods-Study&thought.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Study&thought.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50220B61FC422C800421F6E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B50220B81FC422CE00421F6E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		B53D32AA1FC52097008252D9 /* FMDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBViewController.h; sourceTree = "<group>"; };
+		B53D32AB1FC52097008252D9 /* FMDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBViewController.m; sourceTree = "<group>"; };
+		B53D32AF1FC5308D008252D9 /* foodinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodinfo.json; sourceTree = "<group>"; };
+		B53D32B11FC53186008252D9 /* Food.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		B53D32B21FC53186008252D9 /* Food.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
 		B5670C441FC158D000E2CDFE /* Study&thought.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study&thought.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5670C471FC158D000E2CDFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5670C481FC158D000E2CDFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +78,7 @@
 		B5670C7E1FC170F100E2CDFE /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		B5A0B6AC1FC3D21A005E7655 /* selfDefinedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = selfDefinedView.h; path = "Study&thought/Basic Content/view/selfDefinedView.h"; sourceTree = SOURCE_ROOT; };
 		B5A0B6AD1FC3D21A005E7655 /* selfDefinedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = selfDefinedView.m; path = "Study&thought/Basic Content/view/selfDefinedView.m"; sourceTree = SOURCE_ROOT; };
+		B5A976E11FC70C240006CED0 /* Database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Database.sqlite; sourceTree = "<group>"; };
 		B5C5138C1FC2C10C00084555 /* BasisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasisViewController.h; sourceTree = "<group>"; };
 		B5C5138D1FC2C10C00084555 /* BasisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,7 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD9012233EC1AC69A421B3C7 /* libPods-Study&thought.a in Frameworks */,
+				B50220B71FC422C800421F6E /* libsqlite3.tbd in Frameworks */,
+				B50220B91FC422CE00421F6E /* libsqlite3.0.tbd in Frameworks */,
+				D8BA0F544E4F41587E8A4AA5 /* libPods-Study&thought.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +120,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B53D32A71FC51F0B008252D9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B5A976E11FC70C240006CED0 /* Database.sqlite */,
+				B53D32AF1FC5308D008252D9 /* foodinfo.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		B5670C3B1FC158CF00E2CDFE = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +154,7 @@
 		B5670C461FC158D000E2CDFE /* Study&thought */ = {
 			isa = PBXGroup;
 			children = (
+				B53D32A71FC51F0B008252D9 /* Resource */,
 				B5C5138A1FC2BEAD00084555 /* Public Class */,
 				B5C513881FC2BE3C00084555 /* Home Page */,
 				B5C5138B1FC2C02800084555 /* Basic Content */,
@@ -166,6 +192,8 @@
 			children = (
 				B5C5138C1FC2C10C00084555 /* BasisViewController.h */,
 				B5C5138D1FC2C10C00084555 /* BasisViewController.m */,
+				B53D32AA1FC52097008252D9 /* FMDBViewController.h */,
+				B53D32AB1FC52097008252D9 /* FMDBViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -173,6 +201,8 @@
 		B5A0B6AA1FC3BACE005E7655 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				B53D32B11FC53186008252D9 /* Food.h */,
+				B53D32B21FC53186008252D9 /* Food.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -219,7 +249,9 @@
 		B9CB4FD34EEFBD0509900B6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				21EB09902162DD2FE1CC6325 /* libPods-Study&thought.a */,
+				B50220B81FC422CE00421F6E /* libsqlite3.0.tbd */,
+				B50220B61FC422C800421F6E /* libsqlite3.tbd */,
+				B3149B5FD01184758D1FEB23 /* libPods-Study&thought.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -336,6 +368,8 @@
 				B5670C541FC158D000E2CDFE /* LaunchScreen.storyboard in Resources */,
 				B5670C511FC158D000E2CDFE /* Assets.xcassets in Resources */,
 				B5670C4F1FC158D000E2CDFE /* Main.storyboard in Resources */,
+				B53D32B01FC5308D008252D9 /* foodinfo.json in Resources */,
+				B5A976E21FC70C240006CED0 /* Database.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,9 +414,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Study&thought/Pods-Study&thought-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ASIHTTPRequest/ASIHTTPRequest.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ASIHTTPRequest.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KissXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -411,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53D32B31FC53186008252D9 /* Food.m in Sources */,
 				B5670C4C1FC158D000E2CDFE /* ViewController.m in Sources */,
 				B5A0B6AE1FC3D21A005E7655 /* selfDefinedView.m in Sources */,
 				B5C5138E1FC2C10C00084555 /* BasisViewController.m in Sources */,
@@ -418,6 +468,7 @@
 				B5670C571FC158D000E2CDFE /* main.m in Sources */,
 				B5670C7C1FC15F5700E2CDFE /* mainTableViewCell.m in Sources */,
 				B5670C491FC158D000E2CDFE /* AppDelegate.m in Sources */,
+				B53D32AC1FC52097008252D9 /* FMDBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
