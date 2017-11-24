@@ -70,7 +70,6 @@
                 [[NSUserDefaults standardUserDefaults] setObject:@(i+1) forKey:@"Database_version"];
                 [[NSUserDefaults standardUserDefaults] synchronize];
                 NSLog(@"升级到版本%ld成功",i+1);
-                
             } else {
                 NSLog(@"升级失败");
             }

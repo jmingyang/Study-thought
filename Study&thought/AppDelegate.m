@@ -17,10 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
+    //1.创建或打开已有的数据库
     [self creatDatabase];
-    [self fillDataToTable];
+    //2.第一次打开，设置版本号
+    NSInteger version = [[NSUserDefaults standardUserDefaults] integerForKey:@"Database_version"];
+    if (!version) {
+        NSLog(@"创建表成功，设置版本号！");
+        [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"Database_version"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        NSLog(@"当前版本号为：%ld",version);
+        //3.填充数据
+        [self fillDataToTable];
+    }
     
     ViewController *root = [[ViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:root];
@@ -33,7 +41,6 @@
     //1.获得数据库文件的路径
 //    _dbPath = [[NSBundle mainBundle] pathForResource:@"Database" ofType:@"sqlite"];
     NSString *_docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    //设置数据库名称
     NSString *_dbPath = [_docPath stringByAppendingPathComponent:@"Database.sqlite"];
     [[NSUserDefaults standardUserDefaults] setObject:_dbPath forKey:@"datapath"];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -45,13 +52,7 @@
         //3.创建表
         BOOL result = [_db executeUpdate:@"CREATE TABLE IF NOT EXISTS t_foods (id integer PRIMARY KEY AUTOINCREMENT, FoodsCodeId text NOT NULL, FoodsChiName text NOT NULL,AttachCategory text NOT NULL);"];
         if (result) {
-            NSLog(@"创建表成功，设置版本号！");
-            NSInteger version_ = [[NSUserDefaults standardUserDefaults] integerForKey:@"Database_version"];
-            if (!version_) {
-                [[NSUserDefaults standardUserDefaults] setObject:@(0) forKey:@"Database_version"];
-                [[NSUserDefaults standardUserDefaults] synchronize];
-            }
-            NSLog(@"当前版本号为：%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"Database_version"]);
+            NSLog(@"创建表成功");
         } else {
             NSLog(@"创建表失败");
         }
