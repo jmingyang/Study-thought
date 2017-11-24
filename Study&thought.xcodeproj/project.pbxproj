@@ -23,7 +23,7 @@
 		B5670C7C1FC15F5700E2CDFE /* mainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5670C7B1FC15F5700E2CDFE /* mainTableViewCell.m */; };
 		B5670C7F1FC170F100E2CDFE /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = B5670C7E1FC170F100E2CDFE /* UIColor+Hex.m */; };
 		B5A0B6AE1FC3D21A005E7655 /* selfDefinedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0B6AD1FC3D21A005E7655 /* selfDefinedView.m */; };
-		B5A976E21FC70C240006CED0 /* Database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B5A976E11FC70C240006CED0 /* Database.sqlite */; };
+		B5A519141FC80D540063A25B /* Database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B5A519131FC80D530063A25B /* Database.sqlite */; };
 		B5C5138E1FC2C10C00084555 /* BasisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C5138D1FC2C10C00084555 /* BasisViewController.m */; };
 		D8BA0F544E4F41587E8A4AA5 /* libPods-Study&thought.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3149B5FD01184758D1FEB23 /* libPods-Study&thought.a */; };
 /* End PBXBuildFile section */
@@ -78,7 +78,7 @@
 		B5670C7E1FC170F100E2CDFE /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		B5A0B6AC1FC3D21A005E7655 /* selfDefinedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = selfDefinedView.h; path = "Study&thought/Basic Content/view/selfDefinedView.h"; sourceTree = SOURCE_ROOT; };
 		B5A0B6AD1FC3D21A005E7655 /* selfDefinedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = selfDefinedView.m; path = "Study&thought/Basic Content/view/selfDefinedView.m"; sourceTree = SOURCE_ROOT; };
-		B5A976E11FC70C240006CED0 /* Database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Database.sqlite; sourceTree = "<group>"; };
+		B5A519131FC80D530063A25B /* Database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Database.sqlite; sourceTree = "<group>"; };
 		B5C5138C1FC2C10C00084555 /* BasisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasisViewController.h; sourceTree = "<group>"; };
 		B5C5138D1FC2C10C00084555 /* BasisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,7 +123,7 @@
 		B53D32A71FC51F0B008252D9 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				B5A976E11FC70C240006CED0 /* Database.sqlite */,
+				B5A519131FC80D530063A25B /* Database.sqlite */,
 				B53D32AF1FC5308D008252D9 /* foodinfo.json */,
 			);
 			path = Resource;
@@ -369,7 +369,7 @@
 				B5670C511FC158D000E2CDFE /* Assets.xcassets in Resources */,
 				B5670C4F1FC158D000E2CDFE /* Main.storyboard in Resources */,
 				B53D32B01FC5308D008252D9 /* foodinfo.json in Resources */,
-				B5A976E21FC70C240006CED0 /* Database.sqlite in Resources */,
+				B5A519141FC80D540063A25B /* Database.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

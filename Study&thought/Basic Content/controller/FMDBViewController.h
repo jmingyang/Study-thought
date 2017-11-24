@@ -14,5 +14,5 @@
     FMDatabase *_db;
     NSString *_dbPath;
 }
-
+@property (nonatomic,strong) NSMutableArray *upgradeOrderArr;
 @end

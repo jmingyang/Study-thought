@@ -42,6 +42,7 @@
     mainTable.showsVerticalScrollIndicator = NO;
 //    mainTable.allowsSelection = NO;
     mainTable.scrollEnabled = NO;
+    mainTable.rowHeight = (self.view.bounds.size.height-64)/3;
     [mainTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [self.view addSubview:mainTable];
     
@@ -49,11 +50,6 @@
 }
 
 #pragma mark --UITableViewDataSource
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return (self.view.bounds.size.height-64)/3;
-}
-
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 3;
@@ -78,10 +74,6 @@
     NSLog(@"cell点击");
     BasisViewController *basPage = [[BasisViewController alloc] init];
     [self.navigationController pushViewController:basPage animated:NO];
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

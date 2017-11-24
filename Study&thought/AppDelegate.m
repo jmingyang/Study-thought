@@ -31,16 +31,27 @@
 
 - (void)creatDatabase {
     //1.获得数据库文件的路径
-    _dbPath = [[NSBundle mainBundle] pathForResource:@"Database" ofType:@"sqlite"];
-    NSLog(@"%@",_dbPath);
+//    _dbPath = [[NSBundle mainBundle] pathForResource:@"Database" ofType:@"sqlite"];
+    NSString *_docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    //设置数据库名称
+    NSString *_dbPath = [_docPath stringByAppendingPathComponent:@"Database.sqlite"];
+    [[NSUserDefaults standardUserDefaults] setObject:_dbPath forKey:@"datapath"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSLog(@"数据库地址：%@",_dbPath);
     //2.获取数据库
     _db = [FMDatabase databaseWithPath:_dbPath];
     if ([_db open]) {
-        NSLog(@"打开数据库成功");
+        NSLog(@"创建或打开已有数据库成功");
         //3.创建表
-        BOOL result = [_db executeUpdate:@"CREATE TABLE IF NOT EXISTS t_foods (id integer PRIMARY KEY AUTOINCREMENT, FoodsCodeId text NOT NULL, FoodsChiName text NOT NULL);"];
+        BOOL result = [_db executeUpdate:@"CREATE TABLE IF NOT EXISTS t_foods (id integer PRIMARY KEY AUTOINCREMENT, FoodsCodeId text NOT NULL, FoodsChiName text NOT NULL,AttachCategory text NOT NULL);"];
         if (result) {
-            NSLog(@"创建表成功");
+            NSLog(@"创建表成功，设置版本号！");
+            NSInteger version_ = [[NSUserDefaults standardUserDefaults] integerForKey:@"Database_version"];
+            if (!version_) {
+                [[NSUserDefaults standardUserDefaults] setObject:@(0) forKey:@"Database_version"];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+            }
+            NSLog(@"当前版本号为：%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"Database_version"]);
         } else {
             NSLog(@"创建表失败");
         }
@@ -54,23 +65,20 @@
     NSString *_foodPath = [[NSBundle mainBundle] pathForResource:@"foodinfo" ofType:@"json"];
     NSDictionary *_foodDic = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:_foodPath] options:NSJSONReadingMutableLeaves error:&error];
     NSArray *arr = _foodDic[@"Food"];
+    int countNum = 0;
     for(int i = 0;i<arr.count;i++) {
         NSDictionary *dic = arr[i];
-        NSArray *array = @[dic[@"FoodsCodeId"],dic[@"FoodsChiName"],dic[@"FoodsMode"]];
-        
+        NSArray *array = @[dic[@"FoodsCodeId"],dic[@"FoodsChiName"],dic[@"AttachCategory"]];
         //插入数据
-        //1.executeUpdate:不确定的参数用？来占位（后面参数必须是oc对象，；代表语句结束）
-        //        BOOL result = [_db executeUpdate:@"INSERT INTO t_foods (FoodsCodeId, FoodsChiName, FoodsMode) VALUES (?,?,?)",name,@(age),sex];
-        //2.executeUpdateWithForamat：不确定的参数用%@，%d等来占位 （参数为原始数据类型，执行语句不区分大小写）
-        //    BOOL result = [_db executeUpdateWithFormat:@"insert into t_student (name,age, sex) values (%@,%i,%@)",name,age,sex];
-        //3.参数是数组的使用方式
-        BOOL result = [_db executeUpdate:@"INSERT INTO t_foods(FoodsCodeId, FoodsChiName, FoodsMode) VALUES  (?,?,?);" withArgumentsInArray:array];
+        BOOL result = [_db executeUpdate:@"INSERT INTO t_foods(FoodsCodeId, FoodsChiName, AttachCategory) VALUES  (?,?,?);" withArgumentsInArray:array];
         if (result) {
-            NSLog(@"插入成功");
+//            NSLog(@"插入成功");
+            countNum++;
         } else {
             NSLog(@"插入失败");
         }
     }
+    NSLog(@"成功插入%d条数据",countNum);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
