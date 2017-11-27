@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "FMDatabase.h"
-
+#import "FMDatabaseQueue.h"
 @interface FMDBViewController : UIViewController
 {
     FMDatabase *_db;
     NSString *_dbPath;
+    FMDatabaseQueue *myQueue;
 }
 @property (nonatomic,strong) NSMutableArray *upgradeOrderArr;
 @end

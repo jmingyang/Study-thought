@@ -15,7 +15,6 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //1.创建或打开已有的数据库
     [self creatDatabase];
@@ -28,6 +27,7 @@
         NSLog(@"当前版本号为：%ld",version);
         //3.填充数据
         [self fillDataToTable];
+        
     }
     
     ViewController *root = [[ViewController alloc] init];
