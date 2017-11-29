@@ -87,7 +87,7 @@
 }
 
 - (void)getFunction {
-    
+    NSLog(@"暂未实现");
 }
 
 - (void)postFunction {
@@ -100,17 +100,16 @@
 //    [requestForm setPostValue:@"school" forKey:@"place"];
 //    [requestForm startSynchronous];
 //
-//    //输入返回的信息
-//    NSLog(@"response\n%@",[requestForm responseString]);//返回nil
+//    //输入返回的信息  返回nil
+//    NSLog(@"response\n%@",[requestForm responseString]);
     //方法二
-    // 创建请求
     NSURL *url = [NSURL URLWithString:@"http://localhost:3000/users/postpage"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-    // 超时
+    //超时
     request.timeOutSeconds = 5;
-    // 请求方法
+    //post
     request.requestMethod = @"POST";
-    // 拼接请求体
+    //body
     NSData *data = [@"time='4:01'&place='school'" dataUsingEncoding:NSUTF8StringEncoding];
     [request appendPostData:data];
     [request startSynchronous];
