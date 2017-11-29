@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ASIViewController postFunction]:ASIViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[requestForm responseData]">
+            </PersistentString>
+            <PersistentString
+               value = "[requestForm responseString]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ASIViewController viewDidLoad]:ASIViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[ NSString alloc] initWithData:[request responseData] encoding:NSUTF8StringEncoding]">
+            </PersistentString>
+            <PersistentString
+               value = "response">
+            </PersistentString>
+            <PersistentString
+               value = "[request responseData]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ASIViewController download]:ASIViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[UIImage imageWithData:[request responseData]]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

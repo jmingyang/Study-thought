@@ -37,7 +37,6 @@
     upgradeOrderArr = [NSMutableArray arrayWithObjects:@"ALTER TABLE t_foods ADD Price integer",
                        @"CREATE TABLE IF NOT EXISTS t_foods_extra (id integer PRIMARY KEY AUTOINCREMENT, FoodsCodeId text NOT NULL,FoodsMode text NOT NULL,Price integer NOT NULL,HolidayPrice integer NOT NULL,Remark text NOT NULL);",
                         nil];
-    //@"ALTER TABLE t_foods DROP Remark text",
     [self openDatabase];
     [self upgradeDatabasetoVersion:2];
     
@@ -52,14 +51,13 @@
 
 - (void)openDatabase {
     //1.获得数据库文件的路径
-//    _dbPath = [[NSBundle mainBundle] pathForResource:@"Database" ofType:@"sqlite"];
     _dbPath = [[NSUserDefaults standardUserDefaults] objectForKey:@"datapath"];
     NSLog(@"%@",_dbPath);
     //2.获取数据库
     _db = [FMDatabase databaseWithPath:_dbPath];
     if ([_db open]) {
         NSLog(@"打开数据库成功");
-//        [_db executeUpdate:@"ALTER TABLE t_foods ADD Price integer"];
+
     } else {
         NSLog(@"打开数据库失败");
     }

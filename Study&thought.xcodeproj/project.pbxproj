@@ -22,6 +22,7 @@
 		B5670C6C1FC158D000E2CDFE /* Study_thoughtUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5670C6B1FC158D000E2CDFE /* Study_thoughtUITests.m */; };
 		B5670C7C1FC15F5700E2CDFE /* mainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5670C7B1FC15F5700E2CDFE /* mainTableViewCell.m */; };
 		B5670C7F1FC170F100E2CDFE /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = B5670C7E1FC170F100E2CDFE /* UIColor+Hex.m */; };
+		B59B15C81FCD0C9D0061D077 /* ASIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B15C71FCD0C9D0061D077 /* ASIViewController.m */; };
 		B5A0B6AE1FC3D21A005E7655 /* selfDefinedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0B6AD1FC3D21A005E7655 /* selfDefinedView.m */; };
 		B5A519141FC80D540063A25B /* Database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B5A519131FC80D530063A25B /* Database.sqlite */; };
 		B5C5138E1FC2C10C00084555 /* BasisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C5138D1FC2C10C00084555 /* BasisViewController.m */; };
@@ -76,6 +77,8 @@
 		B5670C7B1FC15F5700E2CDFE /* mainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mainTableViewCell.m; sourceTree = "<group>"; };
 		B5670C7D1FC170F100E2CDFE /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		B5670C7E1FC170F100E2CDFE /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		B59B15C61FCD0C9D0061D077 /* ASIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIViewController.h; sourceTree = "<group>"; };
+		B59B15C71FCD0C9D0061D077 /* ASIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIViewController.m; sourceTree = "<group>"; };
 		B5A0B6AC1FC3D21A005E7655 /* selfDefinedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = selfDefinedView.h; path = "Study&thought/Basic Content/view/selfDefinedView.h"; sourceTree = SOURCE_ROOT; };
 		B5A0B6AD1FC3D21A005E7655 /* selfDefinedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = selfDefinedView.m; path = "Study&thought/Basic Content/view/selfDefinedView.m"; sourceTree = SOURCE_ROOT; };
 		B5A519131FC80D530063A25B /* Database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Database.sqlite; sourceTree = "<group>"; };
@@ -194,6 +197,8 @@
 				B5C5138D1FC2C10C00084555 /* BasisViewController.m */,
 				B53D32AA1FC52097008252D9 /* FMDBViewController.h */,
 				B53D32AB1FC52097008252D9 /* FMDBViewController.m */,
+				B59B15C61FCD0C9D0061D077 /* ASIViewController.h */,
+				B59B15C71FCD0C9D0061D077 /* ASIViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -468,6 +473,7 @@
 				B5670C571FC158D000E2CDFE /* main.m in Sources */,
 				B5670C7C1FC15F5700E2CDFE /* mainTableViewCell.m in Sources */,
 				B5670C491FC158D000E2CDFE /* AppDelegate.m in Sources */,
+				B59B15C81FCD0C9D0061D077 /* ASIViewController.m in Sources */,
 				B53D32AC1FC52097008252D9 /* FMDBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

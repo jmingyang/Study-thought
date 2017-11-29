@@ -10,6 +10,7 @@
 #import "UIColor+Hex.h"
 #import "Masonry.h"
 #import "FMDBViewController.h"
+#import "ASIViewController.h"
 
 @interface BasisViewController ()
 //@property (nonatomic, retain) CAShapeLayer *shapelayer;
@@ -87,14 +88,27 @@
 
     UIButton *btn = [UIButton new];
     btn.backgroundColor = [UIColor blackColor];
-    [btn setTitle:@"go Next" forState:UIControlStateNormal];
+    [btn setTitle:@"go FMDB" forState:UIControlStateNormal];
     [btn setTintColor:[UIColor whiteColor]];
     [btn addTarget:self action:@selector(gotoFMDB) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     [btn mas_makeConstraints:^(MASConstraintMaker *make) {//使用第三方框架实现自动布局
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(40);
-        make.centerX.mas_equalTo(self.view.mas_centerX);
+        make.centerX.mas_equalTo(self.view.mas_centerX).with.offset(-100);
+        make.bottom.mas_equalTo(self.view.mas_bottom).with.offset(-50);
+    }];
+    
+    UIButton *btn1 = [UIButton new];
+    btn1.backgroundColor = [UIColor blackColor];
+    [btn1 setTitle:@"go ASI" forState:UIControlStateNormal];
+    [btn1 setTintColor:[UIColor whiteColor]];
+    [btn1 addTarget:self action:@selector(gotoASI) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn1];
+    [btn1 mas_makeConstraints:^(MASConstraintMaker *make) {//使用第三方框架实现自动布局
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(40);
+        make.centerX.mas_equalTo(self.view.mas_centerX).with.offset(100);
         make.bottom.mas_equalTo(self.view.mas_bottom).with.offset(-50);
     }];
 //    shapelayer = [CAShapeLayer new];
@@ -139,6 +153,11 @@
 - (void)gotoFMDB {
     FMDBViewController *fmdbPage = [FMDBViewController new];
     [self.navigationController pushViewController:fmdbPage animated:NO];
+}
+
+- (void)gotoASI {
+    ASIViewController *asiPage = [ASIViewController new];
+    [self.navigationController pushViewController:asiPage animated:NO];
 }
 
 - (void)delegateFunc {
